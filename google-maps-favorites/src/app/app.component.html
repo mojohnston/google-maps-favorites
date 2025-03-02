@@ -1,0 +1,40 @@
+<!-- Top Navigation Bar -->
+<nav class="navbar navbar-expand-lg" style="background-color: darkgrey; height: 16vh;">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">Bama Locations</a>
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white" [ngClass]="{'active': selectedProfile==='Love'}" (click)="selectProfile('Love')" href="#">Love</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" [ngClass]="{'active': selectedProfile==='Hate'}" (click)="selectProfile('Hate')" href="#">Hate</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="d-flex" style="height: calc(100vh - 16vh);">
+  <!-- Left Side Panel (25% vw) -->
+  <div class="p-3" style="width: 25vw; background-color: black; color: white;">
+    <div class="mb-3">
+      <label for="latitude" class="form-label">Latitude</label>
+      <input type="number" id="latitude" class="form-control" [(ngModel)]="latitude">
+    </div>
+    <div class="mb-3">
+      <label for="longitude" class="form-label">Longitude</label>
+      <input type="number" id="longitude" class="form-control" [(ngModel)]="longitude">
+    </div>
+    <button class="btn btn-primary mb-3" (click)="saveFavorite()">Save Favorite</button>
+    <div class="mb-3">
+      <label for="mapScale" class="form-label">Map Scale</label>
+      <input type="range" id="mapScale" class="form-range" min="1" max="20" [(ngModel)]="mapZoom" (change)="updateMapZoom()">
+    </div>
+  </div>
+
+  <!-- Right Side Panel (75% vw): Google Map -->
+  <div style="width: 75vw; position: relative;">
+    <div id="map" style="height: 100%; width: 100%;"></div>
+  </div>
+</div>

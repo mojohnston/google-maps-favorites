@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GoogleMapFavorites")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+acf10ee24dfd961e48058a845f69196b7951c040")]
 [assembly: System.Reflection.AssemblyProductAttribute("GoogleMapFavorites")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GoogleMapFavorites")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

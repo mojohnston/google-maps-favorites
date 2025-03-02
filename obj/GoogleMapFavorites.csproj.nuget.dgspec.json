@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mjohnston\\source\\repos\\GoogleMapFavorites\\GoogleMapFavorites.csproj": {}
+    "C:\\DEV\\google-maps-favorites\\GoogleMapFavorites.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mjohnston\\source\\repos\\GoogleMapFavorites\\GoogleMapFavorites.csproj": {
+    "C:\\DEV\\google-maps-favorites\\GoogleMapFavorites.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mjohnston\\source\\repos\\GoogleMapFavorites\\GoogleMapFavorites.csproj",
+        "projectUniqueName": "C:\\DEV\\google-maps-favorites\\GoogleMapFavorites.csproj",
         "projectName": "GoogleMapFavorites",
-        "projectPath": "C:\\Users\\mjohnston\\source\\repos\\GoogleMapFavorites\\GoogleMapFavorites.csproj",
+        "projectPath": "C:\\DEV\\google-maps-favorites\\GoogleMapFavorites.csproj",
         "packagesPath": "C:\\Users\\mjohnston\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mjohnston\\source\\repos\\GoogleMapFavorites\\obj\\",
+        "outputPath": "C:\\DEV\\google-maps-favorites\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,6 +51,20 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
