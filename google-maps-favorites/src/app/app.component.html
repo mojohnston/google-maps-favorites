@@ -18,18 +18,26 @@
 <div class="d-flex" style="height: calc(100vh - 16vh);">
   <!-- Left Side Panel (25% vw) -->
   <div class="p-3" style="width: 25vw; background-color: black; color: white;">
-    <div class="mb-3">
-      <label for="latitude" class="form-label">Latitude</label>
-      <input type="number" id="latitude" class="form-control" [(ngModel)]="latitude">
-    </div>
-    <div class="mb-3">
-      <label for="longitude" class="form-label">Longitude</label>
-      <input type="number" id="longitude" class="form-control" [(ngModel)]="longitude">
-    </div>
+    <!-- Save Favorite button -->
     <button class="btn btn-primary mb-3" (click)="saveFavorite()">Save Favorite</button>
+
+    <!-- Map Scale -->
     <div class="mb-3">
       <label for="mapScale" class="form-label">Map Scale</label>
       <input type="range" id="mapScale" class="form-range" min="1" max="20" [(ngModel)]="mapZoom" (change)="updateMapZoom()">
+    </div>
+
+    <!-- Display Selected Coordinates -->
+    <div class="mb-3">
+      <label class="form-label">Selected Location: {{ latitude }}, {{ longitude }}</label>
+    </div>
+
+    <!-- Icon Selection Dropdown -->
+    <div class="mb-3">
+      <label for="iconSelect" class="form-label">Select Marker Icon</label>
+      <select id="iconSelect" class="form-select" [(ngModel)]="selectedIcon">
+        <option *ngFor="let icon of icons" [value]="icon.value">{{ icon.label }}</option>
+      </select>
     </div>
   </div>
 

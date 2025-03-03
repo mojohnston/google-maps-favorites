@@ -1,0 +1,47 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build output for .NET
+/bin/
+/obj/
+
+# Angular and Node
+/node_modules/
+/dist/
+/tmp/
+/out-tsc/
+/.angular/cache
+
+# If your Angular project is in a subfolder, ignore its local build output too.
+# (Adjust the folder name if it’s not exactly "google-maps-favorites")
+/google-maps-favorites/dist/
+/google-maps-favorites/node_modules/
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# System files
+.DS_Store
+Thumbs.db

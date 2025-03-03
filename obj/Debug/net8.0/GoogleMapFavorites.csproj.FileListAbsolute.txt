@@ -39,6 +39,7 @@ C:\DEV\google-maps-favorites\bin\Debug\net8.0\google-maps-favorites\package.json
 C:\DEV\google-maps-favorites\bin\Debug\net8.0\google-maps-favorites\tsconfig.app.json
 C:\DEV\google-maps-favorites\bin\Debug\net8.0\google-maps-favorites\tsconfig.json
 C:\DEV\google-maps-favorites\bin\Debug\net8.0\google-maps-favorites\tsconfig.spec.json
+C:\DEV\google-maps-favorites\bin\Debug\net8.0\GoogleMapFavorites.staticwebassets.runtime.json
 C:\DEV\google-maps-favorites\bin\Debug\net8.0\GoogleMapFavorites.exe
 C:\DEV\google-maps-favorites\bin\Debug\net8.0\GoogleMapFavorites.deps.json
 C:\DEV\google-maps-favorites\bin\Debug\net8.0\GoogleMapFavorites.runtimeconfig.json
